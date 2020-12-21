@@ -1,6 +1,9 @@
 package de.tryhard.biernobo;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -11,6 +14,10 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
+
+    int count = 0;
+    Button clickMeBtn;
+    TextView dynamicText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +32,19 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
-    }
 
+        clickMeBtn = (Button) findViewById(R.id.weiter);
+        dynamicText = (TextView) findViewById(R.id.tasks);
+
+        clickMeBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                count++;
+                dynamicText.setText("dynamic text example : " + count);
+
+            }
+        });
+    }
 }
