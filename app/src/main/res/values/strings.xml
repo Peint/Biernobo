@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Biernobo</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="biernobo">biernobo</string>
     <string name="zur_ck">Zurück</string>
     <string name="weiter">Weiter</string>
-    <string name="bonobier">bonobier</string>
+    <string name="title_leaderboard">Highscores</string>
+    <string name="title_spielen">Spielen</string>
+    <string name="title_weiteres">Mehr</string>
+    <string name="tasks">Aufgaben</string>
 </resources>

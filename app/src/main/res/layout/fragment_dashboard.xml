@@ -3,13 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/appicon" />
+        android:contentDescription="@string/biernobo"
+        android:src="@drawable/appicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/zurueck"
@@ -27,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="64dp"
-        android:onClick="klickWeiter"
+        android:onClick="klickweiter"
         android:text="@string/weiter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -40,7 +45,6 @@
         android:layout_marginTop="24dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
-        android:onClick="klickWeiter"
         android:padding="20dp"
         android:paddingStart="20dp"
         android:paddingLeft="20dp"
@@ -48,7 +52,7 @@
         android:paddingEnd="20dp"
         android:paddingRight="20dp"
         android:paddingBottom="20dp"
-        android:text="TextView"
+        android:text="@string/tasks"
         android:textColor="#000000"
         android:textSize="36sp"
         android:textStyle="bold"
