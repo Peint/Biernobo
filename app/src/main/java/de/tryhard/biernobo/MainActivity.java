@@ -19,6 +19,7 @@ import androidx.navigation.ui.NavigationUI;
 import java.util.ArrayList;
 import java.util.Random;
 
+import static de.tryhard.biernobo.R.id.nav_view;
 import static de.tryhard.biernobo.R.id.weiter;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,31 +28,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        //TODO NavBar verschwunden unedingt fixen!!!
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
                 .build();
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(nav_view);
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(navView, navController);
-
-        setContentView(R.layout.fragment_dashboard);
-        Button klickWeiter = findViewById(weiter);
-        klickWeiter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //TODO Aufgaben random wählen
-                Context context = getApplicationContext();
-                CharSequence text = "Weiter geklickt";
-                int duration = Toast.LENGTH_LONG;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-
-        });
+        NavigationUI.setupWithNavController(bottomNavigationView, navController);
+        bottomNavigationView.setSelectedItemId(R.id.navigation_dashboard);
     }
 }

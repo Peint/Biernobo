@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
-    <string name="task1">%player Trink 1!</string>
-    <string name="task2">%player Trink 2!</string>
-    <string name="task3">%player Trink 3!</string>
-    <string name="task4">%player Trink 4!</string>
-    <string name="task5">%player Trink 5!</string>
+<array name="tasks">
+    <item>%player Trink 1!</item>
+    <item>%player Trink 2!</item>
+    <item>%player Trink 3!</item>
+    <item>%player Trink 4!</item>
+    <item>%player Trink 5!</item>
+</array>
 
 
 </resources>
