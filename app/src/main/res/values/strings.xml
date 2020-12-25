@@ -6,5 +6,7 @@
     <string name="title_leaderboard">Highscores</string>
     <string name="title_spielen">Spielen</string>
     <string name="title_weiteres">Mehr</string>
-    <string name="tasks">Aufgaben</string>
+    <string name="tasks">Zum spielen auf weiter klicken</string>
+    <string name="AddPlayer">Spieler hinzufügen</string>
+    <string name="RemovePlayer">Spiler entfernen</string>
 </resources>

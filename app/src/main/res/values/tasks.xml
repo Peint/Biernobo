@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<array name="tasks">
-    <item>%player Trink 1!</item>
-    <item>%player Trink 2!</item>
-    <item>%player Trink 3!</item>
-    <item>%player Trink 4!</item>
-    <item>%player Trink 5!</item>
+<array name="PlayerSpinner">
+    <item>Spieler anzeigen</item>
+    <item>Spieler hinzufügen</item>
+    <item>Spieler entfernen</item>
 </array>
 
 
